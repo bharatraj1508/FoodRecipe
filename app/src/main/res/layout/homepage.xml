@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_purple"
+    tools:context=".Homepage">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hl_0.10"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hl_0.20"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vl_0.05"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vl_0.95"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hl_0.90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vl_0.25"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vl_0.50"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vl_0.75"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeLabel"
+        android:text="Welcome "
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/hl_0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <SearchView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        app:layout_constraintTop_toTopOf="@id/hl_0.10"
+        app:layout_constraintBottom_toTopOf="@id/hl_0.20"
+        app:layout_constraintStart_toStartOf="@id/vl_0.05"
+        app:layout_constraintEnd_toStartOf="@id/vl_0.95"
+        android:queryHint="Search Dishes"
+        android:layout_margin="16dp"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/homeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"
+        app:layout_constraintTop_toBottomOf="@id/hl_0.90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/vl_0.25"
+        />
+
+    <ImageView
+        android:id="@+id/favIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/favourites"
+        app:layout_constraintTop_toBottomOf="@id/hl_0.90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/vl_0.25"
+        app:layout_constraintEnd_toStartOf="@id/vl_0.50"
+        />
+
+    <ImageView
+        android:id="@+id/insertIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/insert"
+        app:layout_constraintTop_toBottomOf="@id/hl_0.90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/vl_0.50"
+        app:layout_constraintEnd_toStartOf="@id/vl_0.75"
+        />
+
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user"
+        app:layout_constraintTop_toBottomOf="@id/hl_0.90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/vl_0.75"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hl_0.30"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dishesLabel"
+        android:text="Featured Dishes"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/hl_0.20"
+        app:layout_constraintBottom_toTopOf="@id/hl_0.30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ScrollView
+        android:id="@+id/dishesScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/hl_0.30"
+        app:layout_constraintBottom_toTopOf="@id/hl_0.90"
+        app:layout_constraintStart_toStartOf="@id/vl_0.05"
+        app:layout_constraintEnd_toEndOf="@id/vl_0.95"
+        >
+
+        <LinearLayout
+            android:id="@+id/main_Linear_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="16dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:src="@drawable/biryani"-->
+<!--                    android:onClick="toRecipee"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Chciken Biryani"-->
+<!--                    android:textSize="26sp"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:onClick="toRecipee"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="16dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:src="@drawable/butter_chicken"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Butter Chicken"-->
+<!--                    android:textSize="26sp"-->
+<!--                    android:paddingLeft="16dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="16dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:src="@drawable/chana_masala"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Channa Masala"-->
+<!--                    android:textSize="26sp"-->
+<!--                    android:paddingLeft="16dp"/>-->
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
